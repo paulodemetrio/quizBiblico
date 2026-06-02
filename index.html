@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Bíblico</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <button id="temaBtn" class="tema-btn">🌙</button>
+        <div id="inicio">
+            <h1>📖 Quiz Bíblico</h1>
+            <p>Teste seus conhecimentos da Palavra de Deus</p>
+            <input type="text" id="nomeJogador" placeholder="Digite seu nome">
+            <button id="btnComecar">Começar Quiz</button>
+        </div>
+
+        <div id="quiz" class="oculto">
+            <div class="topo-quiz">
+                <div class="info-direita">
+                    <span id="contadorPergunta">Pergunta 1 de 20</span>
+                    <div class="status-jogo">
+                        <span id="sequencia">🔥 0</span>
+                        <span id="timer">10</span>
+                    </div>
+                </div>
+            </div>
+            <div class="barra">
+                <div id="progresso"></div>
+            </div>
+            <h2 id="pergunta"></h2>
+            <div id="respostas"></div>
+        </div>
+
+        <div id="resultado" class="oculto">
+            <h2>Resultado Final</h2>
+            <p id="pontuacao"></p>
+            <div class="barra-resultado">
+                <div id="progressoFinal"></div>
+            </div>
+            <button onclick="location.reload()">
+                Jogar Novamente
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
